@@ -1,0 +1,26 @@
+
+assi 2. to read and display registory entry
+Get-ChildItem -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\'
+
+
+assi3 to copy files in ascending order
+
+Copy-Item -Path C:\Users\wagh_j\Desktop\my_repo\ -Destination D:\folder3
+Get-ChildItem D:\folder3 | sort-object
+
+
+$_SourcePath = "D:\BLOG\Power Shell\Examples\Source File Path\URL_List.txt"
+$_DestinationPath = "D:\BLOG\Power Shell\Examples\Destination File Path"
+ 
+Move-item –path $_SourcePath –destination $_DestinationPath
+
+to write into text file
+Set-Content -Path 'C:\file.txt' -Value 'test string'
+
+to read from file
+Get-Content -Path .\LineNumbers.txt
+
+Get-Content -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\'
+
+
+

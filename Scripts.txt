@@ -23,4 +23,11 @@ Get-Content -Path .\LineNumbers.txt
 Get-Content -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\'
 
 
+Copy-Item -Path D:\folder1 -Destination D:\folder3 -recurse -Force
+Get-ChildItem D:\folder3 | sort-object
+
+
+Copy-Item -Path D:\folder1 -Destination D:\folder3 -recurse -Force
+Get-ChildItem D:\folder3 | sort-object
+
 
